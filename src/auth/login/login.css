@@ -1,0 +1,54 @@
+.container-img {
+  border: 10px; /* Borde de 5px con color gris claro */
+  border-radius: 60%; /* Esquinas redondeadas */
+  box-sizing: border-box; /* Incluye el borde dentro del tamaño del contenedor */
+}
+
+.card {
+  border: none;
+  background-color: #2c1b01;
+}
+
+.color-class {
+  background-color: #2c1b01;
+}
+
+h1 {
+  border: 5px solid #000;
+  border-radius: 20px;
+  background-color: #000;
+  font-weight: bold;
+}
+.card-title {
+  color: #dca13b;
+  text-align: center;
+
+  font-family: mvd;
+}
+
+@font-face {
+  font-family: "mvd"; /* nombre de la fuente */
+  src: url("../../assets/font/mvd.otf"); /* ruta a la fuente */
+  font-weight: normal; /* peso de la fuente */
+  font-style: normal; /* estilo de la fuente */
+}
+
+.form-control {
+  background-color: transparent;
+}
+
+.form-control :focus {
+  background-color: transparent;
+}
+.shadow-effect {
+  border: none;
+  color: black;
+  padding: 14px 28px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #fcfcfc; /* Color base del botón */
+  transition: box-shadow 0.3s ease-in-out; /* Transición suave del efecto de sombra */
+}
+.shadow-effect:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta el desplazamiento y la opacidad de la sombra */
+}
