@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    background-color: #2c1b01;
+  }
+
+  .custom-color {
+    background-color: #2c1b01;
+    color: #2c1b01;
+  }
+  .sidebar ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .sidebar ul li {
+    flex: 1 1 100%;
+  }
+
+  .sidebar ul ul {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .li {
+    background-color: transparent;
+  }
+}

@@ -41,7 +41,6 @@ function Login() {
         text: "Sus credenciales son correctas,sera redigirido",
         icon: "success",
       });
-
       // Manejo de la respuesta exitosa, por ejemplo, redirigir o guardar el token
     } catch (error) {
       console.log("El error que tenemos es de post incorrecto");
