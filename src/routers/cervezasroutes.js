@@ -7,7 +7,7 @@ import EliminarCerveza from "../pages/cervezas/eliminarCerveza";
 export const pathsCer = {
   cervezas: "/Cervezas",
   crearCerveza: "/Cervezas/crear",
-  editarCerveza: "/Cervezas/editar/:id",
+  editarCerveza: "/Cervezas/editar/",
   eliminarCerveza: "/Cervezas/eliminar/:id",
 };
 

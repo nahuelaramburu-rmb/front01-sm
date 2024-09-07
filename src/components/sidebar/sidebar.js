@@ -3,6 +3,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import { NavLink } from "react-router-dom";
 import { pathsCer } from "../../routers/cervezasroutes";
 import { pathsUsers } from "../../routers/usuariosRoutes";
+import { pathsPrimary } from "../../routers/primaryRoutes";
 import "./sidebar.css";
 
 const Sidebar = () => {
@@ -29,14 +30,11 @@ const Sidebar = () => {
       className="d-flex flex-column flex-shrink-0 p-3 bg-dark text-white"
       style={{ width: "250px", height: "100vh" }}
     >
-      <h2 className="text-center">🍺 SM SOFT</h2>
+      <NavLink to={pathsPrimary.index} className="nav-link text-white">
+        <h2 className="text-center">🍺 SM SOFT</h2>
+      </NavLink>
       <hr />
       <ul className="nav nav-pills flex-column mb-auto">
-        <li className="nav-item">
-          <a href="#dashboard" className="nav-link text-white">
-            Dashboard
-          </a>
-        </li>
         <li>
           <a
             href="#usuarios"
@@ -67,20 +65,29 @@ const Sidebar = () => {
                 Listar Usuarios
               </NavLink>
               <li className="nav-item">
-                <a href="#modificar-usuario" className="nav-link text-white">
-                  Modificar Usuario
-                </a>
+                <NavLink
+                  to={pathsUsers.modificarUsuario}
+                  className="nav-link text-white"
+                >
+                  Modificar Usuarios
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a href="#borrar-usuario" className="nav-link text-white">
+                <NavLink
+                  to={pathsUsers.borrarUsuario}
+                  className="nav-link text-white"
+                >
                   Borrar Usuario
-                </a>
+                </NavLink>
               </li>
             </li>
             <li className="nav-item">
-              <a href="#roles-permisos" className="nav-link text-white">
+              <NavLink
+                to={pathsUsers.rolespermisos}
+                className="nav-link text-white"
+              >
                 Roles y Permisos
-              </a>
+              </NavLink>
             </li>
           </ul>
         </li>

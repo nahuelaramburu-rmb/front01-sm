@@ -8,6 +8,9 @@ const ListarUsuario = () => {
         <Sidebar />
         <div class="container mt-4">
           <div class="table-responsive">
+            <br />
+            <h3>LISTADO DE USUARIOS ACTIVOS</h3>
+            <br />
             <table class="table table-striped table-bordered">
               <thead>
                 <tr>
